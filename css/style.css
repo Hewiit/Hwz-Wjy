@@ -16,7 +16,7 @@ body {
     position: absolute;
     background-color: rgba(237, 205, 163, 0.8);
     box-shadow: 0 0 40px 0 rgba(237, 205, 163, 0.8), 0 0 20px 0 #FFFFFF;
-    animation: glow 5s infinite;
+    animation: glow 3s infinite;
 }
 
 .star--medium {
@@ -39,7 +39,7 @@ body {
     left: 80%;
     opacity: 0.3;
     transform: rotate(-45deg) translate(0, -50px);
-    animation: comet 6s infinite;
+    animation: comet 3s infinite;
 }
 
 .comet:after {
