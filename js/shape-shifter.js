@@ -21,7 +21,7 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
       S.UI.simulate(
-        "2023❤|大学相识|hwz&wjy|终成眷属|23年5月18日|我们一起|为爱见证|One宝别眨眼|❤"
+        "2023❤|大学相识|hwz&wjy|23年5月18日|我们在一起啦！|谢谢你的陪伴|我目之所至|都是你❤|我爱你宝贝！！|❤"
       );
     }
 
