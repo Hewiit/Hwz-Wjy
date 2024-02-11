@@ -21,7 +21,7 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
       S.UI.simulate(
-        "2023❤|大学相识|hwz&wjy|23年5月18日|我们在一起啦！|谢谢你的陪伴|我目之所至|都是你❤|我爱你宝贝！！|❤"
+        "2023❤|hwz&wjy|5月18日|直立行走|不再是狗|谢谢你一直在|One宝别眨眼！|❤"
       );
     }
 
@@ -237,7 +237,7 @@ S.UI = (function () {
                   S.Shape.switchShape(S.ShapeBuilder.letter(index), true);
                 }
               },
-              1000,
+              3000,
               value,
               true
             );
@@ -276,7 +276,7 @@ S.UI = (function () {
                   time = t;
                   S.Shape.switchShape(S.ShapeBuilder.letter(time));
                 }
-              }, 1000);
+              }, 3000);
             }
             break;
 
@@ -296,7 +296,7 @@ S.UI = (function () {
             );
         }
       },
-      2000,
+      3000,
       sequence.length
     );
   }

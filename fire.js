@@ -24,15 +24,23 @@ function initAnimate() {
   animate();
 }
 var lastTime;
+var currentIndex = 0;
+var shapes = document.querySelectorAll(".shape");
+function getShape(){
+  var selectedShape = shapes[currentIndex];
 
+  // 递增索引，使用取模确保在范围内循环选择元素
+  currentIndex = (currentIndex + 1) % shapes.length;
+  return selectedShape;
+}
 function animate() {
   ctx.save();
   ctx.fillStyle = "rgba(0,5,24,0.1)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.restore();
   var newTime = new Date();
-  if (newTime - lastTime > 2000 + (window.innerHeight - 767) / 2) {
-    var random = Math.random() * 100 > 33 ? true : false;
+  if (newTime - lastTime > 6000 + (window.innerHeight - 767) / 2) {
+    var random = Math.random() * 100 > 50;
     var x = getRandom(canvas.width / 5, (canvas.width * 4) / 5);
     var y = getRandom(50, 200);
     if (random) {
@@ -55,9 +63,7 @@ function animate() {
           x: canvas.width / 2,
           y: 200,
         },
-        document.querySelectorAll(".shape")[
-          parseInt(getRandom(0, document.querySelectorAll(".shape").length))
-        ]
+        getShape()
       );
       bigbooms.push(bigboom);
     }
@@ -225,7 +231,7 @@ Boom.prototype = {
     putValue(ocas, octx, this.shape, 5, function (dots) {
       var dx = canvas.width / 2 - that.x;
       var dy = canvas.height / 2 - that.y;
-      for (var i = 0; i < dots.length; i++) {
+      for (var i = dots.length-1; i >=0; i--) {
         color = {
           a: dots[i].a,
           b: dots[i].b,
