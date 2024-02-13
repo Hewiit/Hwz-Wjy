@@ -12,7 +12,7 @@ var bigbooms = [];
 
 document.getElementById("iframMusic").onload = function () {
   var music = document.getElementById("music");
-  music.src = "https://m701.music.126.net/20240213161650/d145f193419327b11987d373141c0e61/jdyyaac/obj/w5rDlsOJwrLDjj7CmsOj/32124217813/2452/b462/6f2b/75b9e9dab976f3a17bf44c89e8cb3aeb.m4a";
+  music.src = "./mp3/renxi.mp3";
   music.oncanplay = function () {
     music.play();
   };
