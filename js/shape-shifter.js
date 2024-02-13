@@ -21,7 +21,7 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
       S.UI.simulate(
-        "2023❤|5月18日|hwz&wjy|直立行走|不再是狗|谢谢你一直在|我爱你宝贝|❤"
+        "Valentine's Day！|见不到宝贝（555）|整个小活|希望One宝天天开心|谢谢你一直在|我爱你宝贝|❤"
       );
     }
 
