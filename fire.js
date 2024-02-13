@@ -39,8 +39,8 @@ function animate() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.restore();
   var newTime = new Date();
-  if (newTime - lastTime > 5000 + (window.innerHeight - 767) / 2) {
-    var random = Math.random() * 100 > 70;
+  if (newTime - lastTime > 5500 + (window.innerHeight - 767) / 2) {
+    var random = Math.random() * 100 > 60;
     var x = getRandom(canvas.width / 5, (canvas.width * 4) / 5);
     var y = getRandom(50, 200);
     if (random) {
@@ -272,11 +272,11 @@ function putValue(canvas, context, ele, dr, callback) {
       )
     ) {
       // 移动端字体
-      fontSize = 180;
+      fontSize = 120;
       console.log("移动端");
     } else {
       // pc端字体
-      fontSize = 200;
+      fontSize = 140;
     }
     context.font = fontSize + "px 宋体 bold";
     context.textAlign = "center";
