@@ -21,7 +21,7 @@ var S = {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
       S.UI.simulate(
-        "2023❤|hwz&wjy|5月18日|直立行走|不再是狗|谢谢你一直在|One宝别眨眼！|❤"
+        "2023❤|5月18日|hwz&wjy|直立行走|不再是狗|谢谢你一直在|我爱你宝贝|❤"
       );
     }
 
