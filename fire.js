@@ -39,8 +39,8 @@ function animate() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.restore();
   var newTime = new Date();
-  if (newTime - lastTime > 5500 + (window.innerHeight - 767) / 2) {
-    var random = Math.random() * 100 > 60;
+  if (newTime - lastTime > 3000 + (window.innerHeight - 767) / 2) {
+    var random = Math.random() * 100 > 50;
     var x = getRandom(canvas.width / 5, (canvas.width * 4) / 5);
     var y = getRandom(50, 200);
     if (random) {
